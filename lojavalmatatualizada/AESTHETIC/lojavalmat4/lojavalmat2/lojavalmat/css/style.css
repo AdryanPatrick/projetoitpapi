@@ -1,0 +1,200 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family:Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+
+}
+
+html,body{
+    height: 100%;
+}
+
+:root{
+      --cor-fundo : rgb( 248, 216, 47);
+      --cor-hover : rgb( 300, 250, 60);
+      --cor-primaria : black;
+
+}
+
+.header{
+    width: 100%;
+    height: 90px;
+    background-color: rgb( 248, 216, 47);
+    color: rgb(34, 20, 43);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.header > h1{
+     margin-left: 20px;
+
+}
+
+.header > ul{
+   margin-right: 20px;
+   list-style: none;
+   padding: 0;
+   
+}
+.header ul{
+    background-color: var(--cor-fundo);
+    
+   
+}
+
+.header > ul > li{
+    
+    margin-right: 10px;
+    display: inline;
+    position: relative;
+}
+
+.header ul li a{
+    color: var(--cor-primaria);
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    transition: background .3s;
+    
+}
+
+.header ul li a:hover{
+    background-color: var(--cor-hover);
+    border-radius: 20px;
+       
+}
+
+/*sub menu*/
+.header ul ul{
+    display: none;
+    left: 0;
+    position: absolute;
+  
+    
+
+}
+.header ul li:hover ul{
+    display: block;
+    
+
+}
+
+.header ul ul {
+    width: 150px;
+    border-radius: 20px;
+
+}
+
+.header ul ul li a {
+    display: block;
+
+}
+
+
+.main{
+    width: 100%;
+    max-width: 12000px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 10px;
+    
+}
+
+.content-cards{
+    width: 100%;
+    height:auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    width: 250px;
+    height: auto;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5%;
+}
+
+.card > .imagem-produto{
+    width: 100%;
+    height: 250px;
+    border-radius: 5%;
+
+
+}
+
+.card > .titulo{
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.header > .logo{
+    width: 90px;
+    height:90px;
+}
+
+.left-side{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.select-image{
+    max-width: 400px;
+}
+
+.select-image img{
+    width: 100%;
+}
+
+.header1{
+    width: 100%;
+    height: 90px;
+    background-color: rgb( 248, 216, 47);
+    color: rgb(34, 20, 43);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.header1 > h1{
+    margin-left: 20px;
+
+}
+.header1 > .logo2{
+    width: 90px;
+    height:90px;
+  
+}
+
+.btn {
+    text-decoration: none;
+    border: none;
+    padding: 12px 70px;
+    font-size: 12px;
+    background-color: yellow;
+    color: rgb(2, 2, 2);
+    border-radius: 5px;
+    box-shadow: 8px 8px 28px 1px rgba(0, 0, 0, 0.24);
+    cursor: pointer;
+    outline: none;
+    transition: 0.2s all;
+}
+/* Adding transformation when the button is active */
+  
+.btn:active {
+    transform: scale(0.98);
+    /* Scaling button to 0.98 to its original size */
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    /* Lowering the shadow */
+    
+}
+
